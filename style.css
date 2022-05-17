@@ -1,47 +1,33 @@
 
-/* 
- * Instellingen om fouten te helpen vinden
- */
-
-* {
-    /* border: 1px dotted black; */          /* zorg dat elke box een gestippelde rand krijgt, zodat je de afmeting goed kunt zien */
-    /* background-color: rgba(0,0,0,5%); */  /* zorg dat elke box een doorzichtige donkere achtergrond krijgt, hoe meer boxen in elkaar hoe donkerder de achtergrondkleur */
-}
-
-/* 
- * Basis instellingen
- */
-
-* {  
-  overflow: hidden;        /* zorgt dat DIV en andere block elementen de hoogte krijgt van wat erin zit (anders is het soms 0) */
-  box-sizing: border-box;  /* zorg dat border meetelt bij de width en height van boxen */
-  margin: 0px;             /* standaard marge 0 */
-}
-
-/* Basislayout voor alle pagina's */
-
 html, body {
     overflow: visible;    /* zorgt dat pagina scrollt als hij groter is dan het window */
-    background-color: #EEEEEE;  
-    color: #303030;
+    background-color: #141313;  
+    color: #fff9f9;
     font: Verdana, Arial, Sans-Serif;
+    margin:0;
 }
 
 
 main {
     margin: 0 auto; /* boven en onder geen marge, links en rechts marge gelijk verdeeld (gecentreerd) */
-    width: 700px;
+    width: 1400px;
 }
 
 
 article {
     text-align: justify;
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    
 }
 
 
 header {
-    color: skyblue;
+    color: rgb(255, 255, 255);
     text-align: center;
+    font-size: 24px;
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    padding: 20px;
+    padding-left: 50px;
 }
 
 
@@ -51,17 +37,29 @@ footer {
 }
 
 h1 {
-  margin: 10px 0px;
-}
+    padding:25px;
+    margin: 10px 0px;
+    border:10px outset;
+    background-color:#6ddd73
+    
+    
+    }
 
 p {
   margin: 10px 0px;
+  font-family: 'lato', Arial, Helvetica, sans-serif ;
 }
 /* Layout voor specifieke pagina's */
 
-img.zweefLinks {
-    float: left;
-    margin-right: 15px;
+img{
+    float: right;
+    margin:25px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-color: #adadad;
+    border-radius: 3px;
+  
+
 }
 
 /* Opmaak */
@@ -77,16 +75,67 @@ a {
 
 a:hover {
     text-decoration: underline;
+
 }
+
+.introStyling {
+
+    border-top: solid 2px;
+    padding-top: 15px;
+    border-color: #dbdbdb;
+
+
+}
+
+#introIslam{
+    margin-bottom: 50px;
+}
+
+h3{
+    margin-top: 5px;
+}
+
+.lijstVanGebruiken{
+    margin-top: 8px;
+}
+#laatsteListItemJodendom{
+
+    margin-bottom: 10px;
+
+}
+
+#karel{
+   margin: 20px;  
+}
+.textOnder{
+    padding-bottom:50px;
+}
+#sjahada{
+
+    font-size:  24px;;
+}
+
+
+
+
+
 
 
 /* navigatiebalk */
 nav ul {
     list-style-type: none;
-    margin: auto;
-    padding: 0;
-    background-color: #dddddd;
-    overflow: hidden;
+    margin:0;
+    padding:0;
+    width: 7em;
+    position:absolute;
+    height:100%;
+    background-color: #adadad;
+    overflow:hidden;
+    font-size: 26px;
+    font-family:'lato',Arial, Helvetica, sans-serif;
+    text-align: left;
+    border:ridge;
+    
 }
 
 nav ul li {
@@ -94,19 +143,23 @@ nav ul li {
 }
 
 nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    display:block;
+    color: rgb(255, 255, 255);
+    padding: 10px 24px;
+    text-decoration-color: rgb(255, 255, 255);
+    border: none;
+    border-radius:2px ;
 }
 
 nav li a:hover {
-    background-color: #aaaaaa;
+    color :rgb(0, 0, 0);
+    text-decoration-color: rgb(0, 0, 0);
+    
 }
 
 nav li a.active {
-    background-color: skyblue;
+   text-decoration-color: #5fd854;
+    color:#5fd854;
 }
 
 
